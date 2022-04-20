@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="stylesheet" href="./css/styles.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/icons/favicon_ico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/icons/favicon_ico//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/icons/favicon_ico//favicon-16x16.png">
+    <link rel="manifest" href="./img/icons/favicon_ico//site.webmanifest">
+</head>
+
+
+<body>
+    <header class="header">
+    <div class="container">
+        <nav class="nav">
+            <div class="nav-content">
+                <div class="logo">
+                    <a href="index.html"><img src="./img/logo.png" alt="logo"></a>
+                </div>
+                <div class="logo-text">
+                    <span>Национальный историко-археологический музейный комплекс "Сулайман-Тоо"</span>
+                </div>
+            </div>
+            <div class="nav-right">
+                <div class="lang">
+                    <select name="lang" id="">
+                        <option disabled selected label="Выберите язык"></option>
+                        <option value="RU">Руский</option>
+                        <option value="KG">Кыргызча</option>
+                    </select>
+                </div>
+                <div class="hamburger">
+                    <span class="hamburger__item"></span>
+                    <span class="hamburger__item"></span>
+                    <span class="hamburger__item"></span>
+                </div>
+            </div>
+        </nav>
+        <div class="header_content">
+            <div class="content_menu">
+                <div class="content_menu__item">
+                    <h3 class="menu-title">Основное</h3>
+                    <ul class="tmenu">
+                        <li><a href="#">Прейскурант</a> </li>
+                        <li><a href="#">График работы</a> </li>
+                        <li><a href="#">Реквезиты/оплата/контакты</a></li>
+                        <li><a href="#">Отдел маркетинга и туризма</a></li>
+                        <li><a href="#">Научно-издательский отдел</a></li>
+                        <li><a href="#">Научная библиотека</a></li>
+                        <li><a href="#">Научная архив</a></li>
+                        <li><a href="#">Памятники</a></li>
+                    </ul>
+                </div>
+                <div class="content_menu__item">
+                    <h3 class="menu-title">Полезные ссылки</h3>
+                    <ul class="tmenu">
+                        <li><a href="#">Главная</a> </li>
+                        <li><a href="#">О музее</a> </li>
+                        <li><a href="#">Экскурсии</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Филиалы музея</a></li>
+                        <li><a href="#">Клуб друзей музея</a></li>
+                        <li><a href="#">Для посетителей</a></li>
+                    </ul>
+                </div>
+                <div class="content_menu__item">
+                    <h3 class="menu-title">Экспозиции</h3>
+                    <ul class="tmenu">
+                        <li><a href="#">Архитектура</a> </li>
+                        <li><a href="#">Керамические изделия</a> </li>
+                        <li><a href="#">Каменный декор</a></li>
+                        <li><a href="#">Национальная одежда</a></li>
+                        <li><a href="#">Прикладное исскуство</a></li>
+                        <li><a href="#">Блог научных работ</a></li>
+                        <li><a href="#">Ученый секретарбь</a></li>
+                        <li><a href="#">Отдел постоянных и передвижных выставок</a></li>
+                    </ul>
+                </div>
+                <div class="content_menu__item">
+                    <h3 class="menu-title">Локация</h3>
+                    <b class="address-title">Ош,Гапара Айтиева, 71/2</b>
+                    <div style="position:relative;overflow:hidden;"><a
+                            href="https://yandex.ru/maps/org/istoricheskiy_muzey_sulayman_too/218993536084/?utm_medium=mapframe&utm_source=maps"
+                            style="color:#eee;font-size:12px;position:absolute;top:0px;">Исторический музей
+                            Сулайман-Тоо</a><a
+                            href="https://yandex.ru/maps/10310/osh/category/museum/184105894/?utm_medium=mapframe&utm_source=maps"
+                            style="color:#eee;font-size:12px;position:absolute;top:14px;">Музей в Оше</a><iframe
+                            src="https://yandex.ru/map-widget/v1/-/CCUFIFfm0D" width="100%" height="200" frameborder="0"
+                            allowfullscreen="true" style="position:relative;"></iframe>
+                    </div>
+                </div>
+                <div class="content__soc">
+                    <a href="https://fb.com">
+                        <img src="./img/icons/fb.png" alt="">
+                        <b>Sulayman-mountain</b>
+                    </a>
+                    <a href="https://insta.com">
+                        <img src="./img/icons/insta.png" alt="">
+                        <b>Sulayman-mountain</b>
+                    </a>
+                    <a href="https://yotube.com">
+                        <img src="./img/icons/tube.png" alt="">
+                        <b>Sulayman-mountain</b>
+                    </a>
+                </div>
+                <div class="letter">
+                    <h3 class="menu-title">Новостная рассылка</h3>
+                    <p>Напишите свой email, чтобы быть в курсе последних новостей</p>
+                    <form>
+                        <input type="email" name="email" id="" placeholder="Email">
+                        <button class="letter_btn"></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <div class="bg-change" style="background-image:url('./img/sl-1.png')">
+        <div class="container">
+            <div class="head-content">
+                <div>
+                    <h2 class="title-slide">Музейный комплекс «Сулайман-Тоо»</h2>
+                    <p class="desc-slide">Туристическая достопримечательности города и известного места мусульманского
+                        паломничества.</p>
+                </div>
+                <div class="ekspo-info">
+                    <div class="ekspo-info__item">
+                        <h3 class="bn-title">48301</h3>
+                        <p>Археология</p>
+                    </div>
+                    <div class="ekspo-info__item">
+                        <h3 class="bn-title">238650</h3>
+                        <p>Этнография</p>
+                    </div>
+                    <div class="ekspo-info__item">
+                        <h3 class="bn-title">238650</h3>
+                        <p>Общие экспонаты</p>
+                    </div>
+
+                    <a href="#basic">Больше <img src="./img/icons/right.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- eksponaty -->
+    <section class="ekspo">
+        <div class="container">
+            <h3 class="category-title">Экспонаты</h3>
+            <div class="swiper swiper-middle">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="sw-slide-inner">
+                            <div class="sw-slide-inner-text">
+                                <h3 class="title-slide"><a href="#">Ваза Малевича</a> </h3>
+                                <p class="desc-slide">Уникальная посудная утварь, что была
+                                    найдена в сундуке, теперь предстала
+                                    перед посетителями национального
+                                    историко-археологического музея
+                                    «Сулайман-Тоо» в Оше. Древние вещи
+                                    каждая со своей уникальной историей
+                                    по-разному попадала в руки своего хозяина.</p>
+                            </div>
+                            <div class="sw-slide-inner-img"><img class="lazy" data-src="./img/vaza.png" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="sw-slide-inner">
+                            <div class="sw-slide-inner-text">
+                                <h3 class="title-slide"><a href="#">Ваза Малевича</a> </h3>
+                                <p class="desc-slide">Уникальная посудная утварь, что была
+                                    найдена в сундуке, теперь предстала
+                                    перед посетителями национального
+                                    историко-археологического музея
+                                    «Сулайман-Тоо» в Оше. Древние вещи
+                                    каждая со своей уникальной историей
+                                    по-разному попадала в руки своего хозяина.</p>
+                            </div>
+                            <div class="sw-slide-inner-img"><img class="lazy" data-src="./img/vaza.png" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="container">
+                    <div class="swiper-pagination"></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- news -->
+    <section class="news">
+        <div class="container">
+            <h3 class="category-title">Новости</h3>
+            <div class="news-content">
+                <div class="news-content-left">
+                    <div class="news-item">
+                        <a href="#">
+                            Музей пополнился новыми экспонатами
+                        </a>
+                    </div>
+                    <div class="news-item">
+                        <a href="#">
+                            Экспонаты музея представлены в музее истории узбекистана
+                        </a>
+                    </div>
+                    <div class="news-item">
+                        <a href="#">
+                            Экспонаты музея представлены в музее истории узбекистана
+                        </a>
+                    </div>
+                    <div class="news-item">
+                        <a href="#">
+                            Экспонаты музея представлены в музее истории узбекистана
+                        </a>
+                    </div>
+                </div>
+                <div class="news-content-right">
+                    <div class="new-content-right-item">
+                        <h3 class="news-title"><a href="#">Музей пополнился новыми экспонатами</a> </h3>
+                        <p>Уникальная посудная утварь, что была
+                            найдена в сундуке, теперь предстала
+                            перед посетителями национального
+                            историко-археологического музея
+                            «Сулайман-Тоо» в Оше. Древние вещи
+                            каждая со своей уникальной историей
+                            по-разному попадала в руки своего хозяина.</p>
+                        <img data-src="./img/sl-1.png" class="news-content-img lazy" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Slider head container -->
+    <div class="swiper swiper-head">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide slide-head lazy" data-src="./img/2414454.png">
+                <div class="container">
+                    <div class="title-bold">
+                        <h3 class="title-slide">Гора «Сулайман-Тоо»</h3>
+                        <p class="desc-slide">Туристическая достопримечательности города
+                            и известного места мусульманского паломничества.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide slide-head lazy" data-src="./img/sl-2.png">
+                <div class="container">
+                    <div class="title-bold">
+                        <h3 class="title-slide">Домик Бабура</h3>
+                        <p class="desc-slide">Туристическая достопримечательности города
+                            и известного места мусульманского паломничества.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide slide-head lazy" data-src="./img/2414453.png">
+                <div class="container">
+                    <div class="title-bold">
+                        <h3 class="title-slide">Врата огня</h3>
+                        <p class="desc-slide">Туристическая достопримечательности города
+                            и известного места мусульманского паломничества.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="container">
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </div>
+
+
+    <!-- feature -->
+    <section class="feature">
+        <div class="container">
+            <div class="category-title no">Особенности</div>
+            <div class="feature_content">
+                <div class="feature__item">
+                    <div class="feature__item__img"><img src="./img/icons/sms.png" alt=""></div>
+                    <div class="feature__item__text">
+                        <b><a href="#">Центр обращений</a> </b>
+                        <p>Для справок и вопросов о деятельности музея.</p>
+                    </div>
+                </div>
+                <div class="feature__item">
+                    <div class="feature__item__img"><img src="./img/icons/gallery.png" alt=""></div>
+                    <div class="feature__item__text">
+                        <b><a href="gallery.html">Фотогаларея</a> </b>
+                        <p>Фотографии из выставочных
+                            залов музея-заповедника
+                            и музейных коллекций.</p>
+                    </div>
+                </div>
+                <div class="feature__item">
+                    <div class="feature__item__img"><img src="./img/icons/video.png" alt=""></div>
+                    <div class="feature__item__text">
+                        <b><a href="#">Видеотека</a> </b>
+                        <p>Короткометражные
+                            документальные фильмы
+                            о музейной индустрии.</p>
+                    </div>
+                </div>
+                <div class="feature__item">
+                    <div class="feature__item__img"><img src="./img/icons/card.png" alt=""></div>
+                    <div class="feature__item__text">
+                        <b><a href="#">Реквезиты</a> </b>
+                        <p>Банковские реквизиты музея-заповедника.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- basic numbers -->
+    <section class="basic" id="basic">
+        <div class="container">
+            <h2 class="category-title no">Основные цифры</h2>
+            <div class="basic_content">
+                <div class="basic_content__item">
+                    <h1 class="bn-title counter" data-number="39628"></h1>
+                    <p>Нумизматика</p>
+                </div>
+                <div class="basic_content__item">
+                    <h1 class="bn-title counter" data-number="238650"></h1>
+                    <p>Этнография</p>
+                </div>
+                <div class="basic_content__item">
+                    <h1 class="bn-title counter" data-number="238650"></h1>
+                    <p>Общие экспонаты</p>
+                </div>
+                <div class="basic_content__item">
+                    <h1 class="bn-title counter" data-number="48301"></h1>
+                    <p>Археология</p>
+                </div>
+                <div class="basic_content__item">
+                    <h1 class="bn-title counter" data-number="80749"></h1>
+                    <p>Фонд документов</p>
+                </div>
+                <div class="basic_content__item">
+                    <h1 class="bn-title counter" data-number="46176"></h1>
+                    <p>Другие экспонаты</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+    <div class="container">
+
+        <div class="content_menu">
+            <div class="content_menu__item">
+                <h3 class="menu-title">Основное</h3>
+                <ul class="tmenu">
+                    <li><a href="#">Прейскурант</a> </li>
+                    <li><a href="#">График работы</a> </li>
+                    <li><a href="#">Реквезиты/оплата/контакты</a></li>
+                    <li><a href="#">Отдел маркетинга и туризма</a></li>
+                    <li><a href="#">Научно-издательский отдел</a></li>
+                    <li><a href="#">Научная библиотека</a></li>
+                    <li><a href="#">Научная архив</a></li>
+                    <li><a href="#">Памятники</a></li>
+                </ul>
+            </div>
+            <div class="content_menu__item">
+                <h3 class="menu-title">Полезные ссылки</h3>
+                <ul class="tmenu">
+                    <li><a href="#">Главная</a> </li>
+                    <li><a href="#">О музее</a> </li>
+                    <li><a href="#">Экскурсии</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Филиалы музея</a></li>
+                    <li><a href="#">Клуб друзей музея</a></li>
+                    <li><a href="#">Для посетителей</a></li>
+                </ul>
+            </div>
+            <div class="content_menu__item">
+                <h3 class="menu-title">Экспозиции</h3>
+                <ul class="tmenu">
+                    <li><a href="#">Архитектура</a> </li>
+                    <li><a href="#">Керамические изделия</a> </li>
+                    <li><a href="#">Каменный декор</a></li>
+                    <li><a href="#">Национальная одежда</a></li>
+                    <li><a href="#">Прикладное исскуство</a></li>
+                    <li><a href="#">Блог научных работ</a></li>
+                    <li><a href="#">Ученый секретарбь</a></li>
+                    <li><a href="#">Отдел постоянных и передвижных выставок</a></li>
+                </ul>
+            </div>
+            <div class="content_menu__item">
+                <h3 class="menu-title">Локация</h3>
+                <b class="address-title">Ош,Гапара Айтиева, 71/2</b>
+                <div style="position:relative;overflow:hidden;"><a
+                        href="https://yandex.ru/maps/org/istoricheskiy_muzey_sulayman_too/218993536084/?utm_medium=mapframe&utm_source=maps"
+                        style="color:#eee;font-size:12px;position:absolute;top:0px;">Исторический музей
+                        Сулайман-Тоо</a><a
+                        href="https://yandex.ru/maps/10310/osh/category/museum/184105894/?utm_medium=mapframe&utm_source=maps"
+                        style="color:#eee;font-size:12px;position:absolute;top:14px;">Музей в Оше</a><iframe
+                        src="https://yandex.ru/map-widget/v1/-/CCUFIFfm0D" width="100%" height="200" frameborder="0"
+                        allowfullscreen="true" style="position:relative;"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="btn-top"><div><img src="./img/icons/up.png" alt=""></div></div>
+<script src="./js/index.js"></script>
+
+    <script>
+        let images = ["sl-2.png", "sl-1.png",];
+        let counter = 0;
+        $(function () {
+            setInterval(() => {
+                $('.bg-change').css({ "background-image": `url(img/${images[counter]})` });
+                if (counter + 1 == images.length) {
+                    counter = 0;
+                } else {
+                    ++counter;
+                }
+            }, 6000)
+        })
+    </script>
+</body>
+
+</html>
