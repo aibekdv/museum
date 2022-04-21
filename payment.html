@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Новости</title>
+    <title>Оплата</title>
     <link rel="stylesheet" href="./css/styles.min.css">
     <link rel="apple-touch-icon" sizes="180x180" href="./img/icons/favicon_ico/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./img/icons/favicon_ico//favicon-32x32.png">
@@ -12,7 +12,8 @@
     <link rel="manifest" href="./img/icons/favicon_ico//site.webmanifest">
 </head>
 
-<body background="./img/oc.png">
+<body style="background-image: url('./img/oimo2.png');">
+
     <header class="header">
     <div class="container">
         <nav class="nav">
@@ -124,55 +125,47 @@
     </div>
 </header>
 
-    <div class="news">
+    <section class="section__block">
         <div class="container">
-            <div class="news-view">
-                <div>
-                    <h3 class="n-title">
-                        На Сулайман-Тоо зацвели миндаль и абрикос.
-                        Видео поразительной красотылл
-                    </h3>
-                    <p class="n-text">
-                        Музейный комплекс не перестает восхищать гостей
-                        и жителей южной столицы своей красотой. В этом году
-                        планируется улучшить его инфраструктуру, в частности
-                        будут отремонтированы здание музея, экспозиционные залы
-                        и тротуары. Всемирный банк выделил на эти работы 4 миллиона сомов.
-                        Напомним, в 2009 году ЮНЕСКО включила историко-архитектурный
-                        комплекс Сулайман-Тоо в Список всемирного культурного наследия.
-                        онтрольный (повторный) обход в рамках переписи населения
-                        и жилищного фонда, сообщила пресс-служба кабмина.
-                        Как пояснил первый замглавы кабмина Арзыбек Кожошев,
-                        он пройдет с 23 апреля по 2 мая параллельно с переписью
-                        в отдаленных районах страны.
-
-                        До этого власти уже проводили контрольный обход с 4 по 6 апреля. Первый этап прошел с 24 марта
-                        по 3
-                        апреля. По информации главы
-                        Нацстаткома Бактыбека Кудайбергенова, за это время на горячую
-                        линию по номеру 1216 и через соцсети обратились более
-                        800 жителей страны. Всего было зарегистрировано
-                        более 2000 обращений.
-
-                    </p>
-                </div>
-                <div class="news-view-img">
-                    <img src="./img/n1.png" alt="">
-                    <img src="./img/n2.png" alt="">
-                </div>
+            <h3 class="n-title">Оплата</h3>
+            <div class="my-1">
+                <img src="./img/payment_method.png" alt="">
+                <p>Проведя до этого в статусе шехзаде более
+                    50 лет — дольше, чем кто-либо в истории</p>
             </div>
-            <div class="other">
-                <h2 class="title-bold">Другие новости</h2>
-                <ul class="other-content">
-                    <li><a href="news.html">На Сулайман-Тоо зацвели миндаль и абрикос. Видео поразительной красотылл</a></li>
-                    <li><a href="news.html">На Сулайман-Тоо зацвели миндаль и абрикос. Видео поразительной красотылл</a></li>
-                    <li><a href="news.html">На Сулайман-Тоо зацвели миндаль и абрикос. Видео поразительной красотылл</a></li>
-                    <li><a href="news.html">На Сулайман-Тоо зацвели миндаль и абрикос. Видео поразительной красотылл</a></li>
-                    <li><a href="news.html">На Сулайман-Тоо зацвели миндаль и абрикос. Видео поразительной красотылл</a></li>
-                </ul>
-            </div>
+            <form class="payment__form my-1">
+                <div class="payment__form__item">
+                    <label for="name">Имя и фамилия владельца</label>
+                    <input type="text" name="name" placeholder="ASAN ASANOV" />
+                </div>
+                <div class="payment__form__item">
+                    <label for="cart">Номер карты</label>
+                    <input type="text" name="cart" placeholder="XXXX XXXX XXXX XXXX" />
+                </div>
+                <div class="payment__form__item">
+                    <label for="validity">Срок действия</label>
+                    <input type="text" name="validity" placeholder="XX/XX" />
+                </div>
+                <div class="payment__form__item">
+                    <label for="cvv">CVV</label>
+                    <input type="text" name="cvv" placeholder="XXX" />
+                </div>
+                <div class="payment__form__item">
+                    <label for="ticket">Билет</label>
+                    <select name="ticket" id="ticket">
+                        <option value="1" selected>1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+                <div class="payment__form__item">
+                    <h2 class="my-1">Итого: 10$</h2>
+                    <button class="btn-submit">Оплатить <img src="./img/icons/right.png" class="img-fluid" alt=""></button>
+                </div>
+            </form>
         </div>
-    </div>
+    </section>
 
     <footer>
     <div class="container">
@@ -234,6 +227,7 @@
 </footer>
 <div class="btn-top"><div><img src="./img/icons/up.png" alt=""></div></div>
 <script src="./js/index.js"></script>
+
 </body>
 
 </html>
