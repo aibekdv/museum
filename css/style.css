@@ -1018,21 +1018,6 @@ body {
   font-size: 16px;
   font-weight: 500;
 }
-.header .nav .lang {
-  margin-right: 30px;
-  background-color: #fff;
-}
-.header .nav .lang select {
-  background-color: #fff;
-  border: none;
-  outline: none;
-  font-size: 16px;
-  cursor: pointer;
-  text-align: end;
-}
-.header .nav .lang select option {
-  background-color: #fff;
-}
 .header_content {
   display: none;
   padding: 16px 6px;
@@ -1058,6 +1043,26 @@ body {
 
 .hidden {
   overflow: hidden;
+}
+
+.lang {
+  margin-right: 30px;
+  background-color: #fff;
+}
+.lang.active {
+  display: block;
+}
+.lang select {
+  background-color: #fff;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  text-align: end;
+  cursor: pointer;
+}
+.lang select option {
+  background-color: #fff;
+  max-width: 80%;
 }
 
 .content_menu {
@@ -1237,7 +1242,7 @@ footer .footer_bottom {
   padding: 12px 0px;
 }
 .news-content-img {
-  max-width: 80%;
+  max-width: 100%;
   max-height: auto;
   margin-top: 10px;
 }
@@ -1248,11 +1253,12 @@ footer .footer_bottom {
   line-height: 1.5;
   margin: 6px 0px;
   max-width: 70%;
+  cursor: pointer;
 }
-.news-item a:hover {
-  text-decoration: underline;
+.news-item.active {
+  font-weight: 600;
 }
-.news-item a::before {
+.news-item::before {
   content: "";
   width: 10px;
   height: 2px;
@@ -1275,6 +1281,35 @@ footer .footer_bottom {
   display: none;
 }
 .news-item-content.active {
+  display: block;
+}
+
+.ticket {
+  display: none;
+  margin-right: 30px;
+}
+.ticket.active {
+  display: block;
+}
+.ticket a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.ticket a:hover {
+  text-decoration: underline;
+}
+.ticket a img {
+  padding-left: 4px;
+}
+
+.news-content__item {
+  display: none;
+}
+.news-content__item.active {
   display: block;
 }
 
@@ -2053,10 +2088,6 @@ footer .footer_bottom {
     max-width: 80%;
   }
 
-  .news-content-right {
-    display: none;
-  }
-
   .bg-change,
 .head-content {
     height: 400px;
@@ -2109,6 +2140,14 @@ footer .footer_bottom {
 
   .md-block {
     max-width: 70%;
+  }
+
+  .lang {
+    display: none;
+  }
+
+  .ticket {
+    margin-left: 30px;
   }
 }
 @media screen and (max-width: 575px) {
