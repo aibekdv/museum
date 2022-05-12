@@ -949,6 +949,7 @@ ul,
 li {
   list-style: none;
   padding: 0;
+  font-size: 16px;
 }
 
 img {
@@ -970,6 +971,7 @@ body {
   background-position: center right;
   background-origin: padding-box;
   min-height: 100vh;
+  font-size: 16px;
 }
 
 .header {
@@ -1230,14 +1232,11 @@ footer .footer_bottom {
 }
 
 .news {
-  padding: 24px 0;
-  min-height: calc(100vh - 68px);
+  padding: 60px 0;
 }
 
 .ekspo {
-  padding: 24px 0;
-  max-height: calc(100vh - 68px);
-  height: 800px;
+  padding: 60px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1253,10 +1252,67 @@ footer .footer_bottom {
   gap: 20px;
   padding: 12px 0px;
 }
+.news-content__item {
+  position: relative;
+}
+.news-content__item__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  padding: 8px;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+}
+.news-content__item__text p {
+  position: relative;
+}
+.news-content__item__text a {
+  position: relative;
+}
+.news-content__item__text a::after {
+  content: "→";
+  position: absolute;
+  right: -17px;
+}
+.news-content__item__text a:hover {
+  text-decoration: underline;
+}
+.news-content__item__text:hover {
+  opacity: 1;
+}
+.news-content__item__text::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
 .news-content-img {
   max-width: 100%;
-  max-height: auto;
-  margin-top: 10px;
+  max-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .news-item {
@@ -1327,8 +1383,7 @@ footer .footer_bottom {
 }
 
 .feature {
-  padding: 24px 0;
-  min-height: calc(100vh - 71px);
+  padding: 60px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1357,6 +1412,9 @@ footer .footer_bottom {
 }
 .feature__item__img img {
   max-width: 50px;
+}
+.feature__item a {
+  font-size: 18px;
 }
 .feature__item a:hover {
   text-decoration: underline;
@@ -1388,9 +1446,7 @@ footer .footer_bottom {
 }
 
 .basic {
-  padding: 32px 0;
-  min-height: calc(100vh - 71px);
-  height: 800px;
+  padding: 60px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1490,7 +1546,6 @@ footer .footer_bottom {
 
 .bg-change {
   width: 100%;
-  min-height: calc(100vh - 68px) !important;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -1613,8 +1668,7 @@ footer .footer_bottom {
 }
 
 .section__block {
-  padding: 30px 6px;
-  min-height: calc(100vh - 72px - 305px);
+  padding: 60px 6px;
 }
 .section__block .category-title {
   text-align: center;
@@ -1732,7 +1786,8 @@ footer .footer_bottom {
   font-size: 16px;
   font-weight: 600;
 }
-.payment__form input {
+.payment__form input,
+.payment__form textarea {
   width: 360px;
   height: 30px;
   border: none;
@@ -1883,9 +1938,54 @@ footer .footer_bottom {
       flex-wrap: wrap;
 }
 
-.museum__maps img {
-  -o-object-fit: cover;
-     object-fit: cover;
+.res-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 200px;
+}
+.res-contact input {
+  width: 30px;
+  height: 30px;
+}
+.res-contact label {
+  padding: 4px;
+  font-size: 12px;
+}
+
+.resmail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.resmail button {
+  padding: 8px 12px;
+  border: 0;
+  outline: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-size: 16px;
+  background: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+.resmail button img {
+  margin-left: 6px;
 }
 
 .swiper {
@@ -2387,7 +2487,8 @@ footer .footer_bottom {
   }
 
   .payment__form input,
-.payment__form select {
+.payment__form select,
+.payment__form textarea {
     width: 100%;
   }
 
@@ -2410,6 +2511,10 @@ footer .footer_bottom {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: start;
+  }
+
+  .res-contact input {
+    height: 20px;
   }
 }
 @media screen and (max-width: 360px) {

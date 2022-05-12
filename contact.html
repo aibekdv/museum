@@ -128,9 +128,33 @@
                 </p>
             </div>
             <div class="my-1 contact__link">
-                <p><a href="https://wa.me/996775776777">WhatsApp <img src="./img/icons/right.png" alt=""></a></p>
-                <p><a href="https://t.me/sulayman_mountain">Telegram <img src="./img/icons/right.png" alt=""></a></p>
-                <p><a href="https://vk.com/sulayman_mountain">VK <img src="./img/icons/right.png" alt=""></a></p>
+                <form class="payment__form my-1">
+                    <div class="payment__form__item">
+                        <label for="name">Имя и фамилия</label>
+                        <input type="text" name="name" />
+                    </div>
+                    <div class="payment__form__item">
+                        <label for="email">E-mail</label>
+                        <input type="text" name="email" />
+                    </div>
+                    <div class="payment__form__item">
+                        <label for="title">Тема</label>
+                        <input type="text" name="title" />
+                    </div>
+                    <div class="payment__form__item">
+                        <label for="message">Сообщение</label>
+                        <textarea name="message" id="message"></textarea>
+                    </div>
+
+                    <div class="my-1 resmail">
+                        <div class="res-contact">
+                            <input type="checkbox" name="copy" id="copy" />
+                            <label for="copy">Отправить копию этого
+                                сообщение на ваш адрес</label>
+                        </div>
+                        <button>Отправить сообщение <img src="./img/icons/right.png" class="img-fluid" alt=""></button>
+                    </div>
+                </form>
             </div>
         </div>
     </section>
